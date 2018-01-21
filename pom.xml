@@ -13,7 +13,8 @@
 
 
     <properties>
-        <java.version>1.9</java.version>
+        <!--<java.version>1.8</java.version>-->
+        <java.version>9</java.version>
         <java.encoding>UTF-8</java.encoding>
         <project.build.sourceEncoding>${java.encoding}</project.build.sourceEncoding>
         <spring.version>5.0.2.RELEASE</spring.version>
@@ -92,6 +93,8 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
                 </configuration>
             </plugin>
         </plugins>
